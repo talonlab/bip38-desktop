@@ -740,7 +740,7 @@
                     <item>
                      <widget class="QLabel" name="noECWIFQLabel">
                       <property name="text">
-                       <string>Wallet Important Format (WIF)</string>
+                       <string>Wallet Import Format (WIF)</string>
                       </property>
                      </widget>
                     </item>

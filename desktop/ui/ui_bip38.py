@@ -852,7 +852,7 @@ class Ui_MainWindow(object):
         self.noECWIFTypeQLabel.setText(QCoreApplication.translate("MainWindow", u"WIF Type", None))
         self.noECWIFTypeQComboBox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"(Select)", None))
         self.noECPrivateKeyConvertQPushButton.setText(QCoreApplication.translate("MainWindow", u"Convert", None))
-        self.noECWIFQLabel.setText(QCoreApplication.translate("MainWindow", u"Wallet Important Format (WIF)", None))
+        self.noECWIFQLabel.setText(QCoreApplication.translate("MainWindow", u"Wallet Import Format (WIF)", None))
         self.noECEncryptQPushButton.setText(QCoreApplication.translate("MainWindow", u"Encrypt", None))
         self.ecOwnerSaltQLabel.setText(QCoreApplication.translate("MainWindow", u"Owner Salt", None))
         self.ecOwnerSaltGenerateQPushButton.setText(QCoreApplication.translate("MainWindow", u"Generate", None))
