@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/talonlab/python-bip38/releases" target="_blank">Releases</a> · <a href="https://talonlab.gitbook.io/bip38/manual" target="_blank">Manual</a> · <a href="https://bip38.readthedocs.io" target="_blank">API Docs</a> · <a href="#donations">Donation</a>
+    <a href="https://github.com/talonlab/bip38-desktop/releases" target="_blank">Releases</a> · <a href="https://talonlab.gitbook.io/bip38/manual" target="_blank">Manual</a> ·  <a href="#donations">Donation</a>
 </p>
 
 <div align="center">
@@ -15,51 +15,44 @@
 
 </div>
 
-A Python library for the implementation of Bitcoin Improvement Proposal - 0038 / (BIP38) protocol.
-This library supports both [No EC-multiply](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki#encryption-when-ec-multiply-flag-is-not-used) and [EC-multiply](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki#encryption-when-ec-multiply-mode-is-used) modes and is compatible with over 150+ cryptocurrencies.
-It's specifically tailored for Pay-to-PubKey-Hash (P2PKH) address types.
-
+A cross-platform client desktop application built on the [Bitcoin Improvement Proposal - 0038 (BIP38) library](https://github.com/talonlab/python-bip38.git). This application leverages the BIP38 library's functionality to support both No EC-multiply and EC-multiply encryption modes, compatible with over 150 cryptocurrencies.
 ![Desktop Application](data/bip38.gif)
 
 For more info see the [Passphrase-protected private key - BIP38](https://en.bitcoin.it/wiki/BIP_0038) spec.
 
 ## Installation
 
-The easiest way to install `bip38` library is via pip:
-
-```
-pip install bip38
-```
-
 ### For Windows (64-bit)
 
 To install on Windows, download one of the following from the Releases page:
 
-[MSI](https://github.com/talonlab/bip38-desktop/releases) Installer – Recommended for a guided installation process.
+- [MSI](https://github.com/talonlab/bip38-desktop/releases) Installer – Recommended for a guided installation process.
 
-[Executable](https://github.com/talonlab/bip38-desktop/releases) (.exe) – A standalone version that runs without installation.
+- [Executable](https://github.com/talonlab/bip38-desktop/releases) (.exe) – A standalone version that runs without installation.
+
 Once downloaded, double-click the .msi or .exe file and follow the on-screen instructions to complete the installation.
 
 ### For Linux
 
 To install on Linux, download one of the following from the Releases page:
 
-[Debian Package (.deb)](https://github.com/talonlab/bip38-desktop/releases) – Recommended for Debian-based systems like Ubuntu and Debian.
+- [Debian Package (.deb)](https://github.com/talonlab/bip38-desktop/releases) – Recommended for Debian-based systems like Ubuntu and Debian.
 
-Installation: Open a terminal, navigate to the download location, and run:
-```
-sudo dpkg -i bip38-desktop-0.1.0-amd64.deb
-```
+    Installation: Open a terminal, navigate to the download location, and run:
+    ```
+    sudo dpkg -i bip38-desktop-0.1.0-amd64.deb
+    ```
 
-[AppImage](https://github.com/talonlab/bip38-desktop/releases) – A portable format compatible with most Linux distributions.
+- [AppImage](https://github.com/talonlab/bip38-desktop/releases) – A portable format compatible with most Linux distributions.
 
-Installation: Make the file executable and run:
-```
-chmod +x bip38-desktop-0.1.0-x86_64.AppImage
-```
-```
-./ bip38-desktop-0.1.0-x86_64.AppImage
-```
+    Installation: Make the file executable and run:
+    ```
+    chmod +x bip38-desktop-0.1.0-x86_64.AppImage
+    ```
+    ```
+    ./ bip38-desktop-0.1.0-x86_64.AppImage
+    ```
+
 
 ## Development
 
@@ -80,12 +73,12 @@ pip install -r requirements.txt
 
 ## Contributing
 
-Feel free to open an [issue](https://github.com/talonlab/python-bip38/issues) if you find a problem,
+Feel free to open an [issue](https://github.com/talonlab/bip38-desktop/issues) if you find a problem,
 or a pull request if you've solved an issue. And also any help in testing, development,
 documentation and other tasks is highly appreciated and useful to the project.
 There are tasks for contributors of all experience levels.
 
-For more information, see the [CONTRIBUTING.md](https://github.com/talonlab/python-bip38/blob/master/CONTRIBUTING.md) file.
+For more information, see the [CONTRIBUTING.md](https://github.com/talonlab/bip38-desktop/blob/master/CONTRIBUTING.md) file.
 
 ## Supported Cryptocurrencies
 
@@ -105,4 +98,4 @@ Thank you very much for your support.
 
 ## License
 
-Distributed under the [MIT](https://github.com/talonlab/python-bip38/blob/master/LICENSE) license. See ``LICENSE`` for more information.
+Distributed under the [MIT](https://github.com/talonlab/bip38-desktop/blob/master/LICENSE) license. See ``LICENSE`` for more information.
