@@ -8,14 +8,11 @@
 
 <div align="center">
 
-[![Bitcoin](https://img.shields.io/badge/Bitcoin-FF9900?logo=bitcoin&logoColor=white)](#)
-[![PyPI Version](https://img.shields.io/pypi/v/bip38.svg?color=blue)](https://pypi.org/project/bip38)
-[![PyPI License](https://img.shields.io/pypi/l/bip38?color=black)](https://pypi.org/project/bip38)
-[![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
+![Bitcoin](https://img.shields.io/badge/Bitcoin-FF9900?logo=bitcoin&logoColor=white)
+![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux-blue)
+![GitHub License](https://img.shields.io/github/license/talonlab/bip38-desktop?color=black)
 ![GitHub Release](https://img.shields.io/github/v/release/talonlab/bip38-desktop)
-
-
+![GitHub Release Date](https://img.shields.io/github/release-date/talonlab/bip38-desktop)
 
 </div>
 
