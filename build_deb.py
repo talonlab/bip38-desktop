@@ -15,7 +15,7 @@ import platform
 import subprocess
 
 from bip38.info import __author__ as maintainer, __description__, __name__
-from desktop.info import __version__ as app_version
+from src.info import __version__ as app_version
 
 arch_map = {
     "x86_64": "amd64",
@@ -34,7 +34,7 @@ app_version = app_version.lstrip("v") # normalized version
 app_name = __name__.upper()
 app_description = __description__
 
-icon_path = "desktop/ui/images/svg/logo.svg"  
+icon_path = "src/ui/images/svg/logo.svg"  
 
 build_root = Path("./dist")
 build_root.mkdir(exist_ok=True)

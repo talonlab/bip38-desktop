@@ -19,11 +19,11 @@ from PySide6.QtGui import (
     QFontDatabase, QIcon
 )
 
-from desktop.utils import (
+from src.utils import (
     resolve_path, put_svg
 )
-from desktop.ui.ui_bip38 import Ui_MainWindow
-from desktop.info import __version__ as desktop_ver
+from src.ui.ui_bip38 import Ui_MainWindow
+from src.info import __version__ as desktop_ver
 from bip38.info import __version__ as library_ver
 
 class Application(QMainWindow):
@@ -70,21 +70,21 @@ class Application(QMainWindow):
         self.detached_window = None
 
         self.setWindowTitle("Bitcoin Improvement Proposal - 0038")
-        self.bip38_icon = QIcon(resolve_path("desktop/ui/images/icon/icon.ico"))
+        self.bip38_icon = QIcon(resolve_path("src/ui/images/icon/icon.ico"))
         self.setWindowIcon(self.bip38_icon)
         
         put_svg(
             self.ui.bip38LogoHLayout,
-            resolve_path("desktop/ui/images/svg/full-logo.svg"),
+            resolve_path("src/ui/images/svg/full-logo.svg"),
             84,
             44
         )
         self.ui.bip38LogoHLayout.setContentsMargins(0, 0, 5, 0)
 
-        css_path = resolve_path("desktop/ui/css/theme.css")
+        css_path = resolve_path("src/ui/css/theme.css")
         self.theme_watcher = QFileSystemWatcher([css_path])
         self.theme_watcher.fileChanged.connect(lambda: self.load_stylesheet(css_path))
-        QFontDatabase.addApplicationFont(resolve_path("desktop/ui/font/HDWallet.ttf"))
+        QFontDatabase.addApplicationFont(resolve_path("src/ui/font/HDWallet.ttf"))
         self.load_stylesheet(css_path)
 
         info = {

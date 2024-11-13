@@ -10,7 +10,7 @@ from PySide6.QtCore import Qt
 
 import sys
 
-from desktop.main import BIP38Application
+from src.main import BIP38Application
 
 
 def main() -> None:

@@ -16,7 +16,7 @@
 
 </div>
 
-A cross-platform client desktop application built on the [Bitcoin Improvement Proposal - 0038 (BIP38) library](https://github.com/talonlab/python-bip38.git). This application leverages the BIP38 library's functionality to support both No EC-multiply and EC-multiply encryption modes, compatible with over 150 cryptocurrencies.
+A cross-platform client desktop application built on the [Bitcoin Improvement Proposal - 0038 (BIP38) library](https://github.com/talonlab/python-bip38). This application leverages the BIP38 library's functionality to support both No EC-multiply and EC-multiply encryption modes, compatible with over 150 cryptocurrencies.
 
 ![Desktop Application](data/bip38.gif)
 

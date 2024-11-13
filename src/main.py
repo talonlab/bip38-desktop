@@ -33,7 +33,7 @@ from bip38.wif import (
      get_wif_type, private_key_to_wif
 )
 
-from desktop.core import Application
+from src.core import Application
 
 
 str_to_int = lambda s: int(s) if s.isdigit() else None
