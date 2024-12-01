@@ -13,6 +13,11 @@ from bip38.info import __author__ as author
 
 app_name  = "BIP38"
 
+# Get platform info
+platform_name = platform.system().lower()
+machine_arch = platform.machine()
+app_version = version.lstrip("v")
+
 if platform.system() == "Windows":
     icon_path = "src/ui/images/icon/icon.ico"
 else:
@@ -34,6 +39,19 @@ msi_shortcut_table = [
         'TARGETDIR'                    # WkDir
     )
 ]
+
+bdist_mac_opt = {
+    "iconfile": "data/MyIcon.icns",
+    "bundle_name": app_name,
+    "include_resources": [("src/ui/images", "Resources")],
+    "codesign_identity": "Developer ID Application: Talon Lab"
+}
+
+bdist_dmg_options = {
+    "volume_label": f"{app_name}-{app_version}-{platform_name}-{machine_arch}",
+    "applications_shortcut": True,
+    "background": icon_path
+}
 
 msi_directory_table = [
     ("ProgramMenuFolder", "TARGETDIR", "."),
@@ -62,7 +80,10 @@ build_exe_opt = {
         "qgif.dll", "qicns.dll", "qjpeg.dll", "qpdf.dll", "qtga.dll", "qtiff.dll", "qwbmp.dll", "qwebp.dll",
         "qtvirtualkeyboardplugin.dll", "qtuiotouchplugin.dll", "qdirect2d.dll", "qoffscreen.dll", "qminimal.dll"
     ],
-    "include_msvcr": True
+    "include_msvcr": True,
+    "include_files":[
+            ("data/MyIcon.icns", "MyApp.app/Contents/Resources/icon.icns"),
+        ]
 }
 
 executables = [
@@ -84,6 +105,8 @@ setup(
     executables=executables,
     options={
         "build_exe": build_exe_opt,
-        "bdist_msi": bdist_msi_opt
+        "bdist_msi": bdist_msi_opt,
+        "bdist_mac": bdist_mac_opt,
+        "bdist_dmg": bdist_dmg_options
     }
 )
