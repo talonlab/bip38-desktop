@@ -14,8 +14,8 @@ import shutil
 import platform
 import subprocess
 
-from bip38.info import __author__ as maintainer, __description__, __name__
-from src.info import __version__ as app_version
+from bip38.info import __description__, __name__
+from src.info import __version__ as app_version, __author__ as maintainer
 
 arch_map = {
     "x86_64": "amd64",
