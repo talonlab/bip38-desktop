@@ -52,9 +52,24 @@ To install on Linux, download one of the following from the Releases page:
     chmod +x bip38-desktop-x.x.x-x86_64.AppImage
     ```
     ```
-    ./ bip38-desktop-x.x.x-x86_64.AppImage
+    ./bip38-desktop-x.x.x-x86_64.AppImage
     ```
 
+### For Mac
+
+To install on Mac, download one of the following from the Releases page:
+
+- [macOS App Bundle (.app)](https://github.com/talonlab/bip38-desktop/releases):
+   - Available as a `.zip` file.
+   - Two versions:
+     - **ARM64**: For Apple Silicon `M` series devices.
+     - **x64**: For Intel-based Macs.
+
+- [macOS Disk Image (.dmg)](https://github.com/talonlab/bip38-desktop/releases):
+   - A convenient format for installation on macOS.
+   - Two versions:
+     - **ARM64**: For Apple Silicon `M` series devices.
+     - **x64**: For Intel-based Macs.
 
 ## Development
 
