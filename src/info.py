@@ -5,3 +5,4 @@
 # file COPYING or https://opensource.org/license/mit
 
 __version__: str = "v0.2.0"
+__author__: str = "Talon Lab"

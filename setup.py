@@ -8,8 +8,8 @@ from cx_Freeze import setup, Executable
 
 import platform
 
-from src.info import __version__ as version  
-from bip38.info import __author__ as author
+from src.info import __version__ as version, __author__ as author
+
 
 app_name  = "BIP38"
 
