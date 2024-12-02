@@ -8,8 +8,8 @@
 
 <div align="center">
 
-![Bitcoin](https://img.shields.io/badge/Bitcoin-FF9900?logo=bitcoin&logoColor=white)
-![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux-blue)
+![GitHub Created At](https://img.shields.io/github/created-at/talonlab/bip38-desktop)
+![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20Mac-blue)
 ![GitHub License](https://img.shields.io/github/license/talonlab/bip38-desktop?color=black)
 ![GitHub Release](https://img.shields.io/github/v/release/talonlab/bip38-desktop)
 ![GitHub Release Date](https://img.shields.io/github/release-date/talonlab/bip38-desktop)
@@ -28,9 +28,9 @@ For more info see the [Passphrase-protected private key - BIP38](https://en.bitc
 
 To install on Windows, download one of the following from the Releases page:
 
-- [MSI](https://github.com/talonlab/bip38-desktop/releases) Installer – Recommended for a guided installation process.
+- MSI Installer – Recommended for a guided installation process.
 
-- [Executable](https://github.com/talonlab/bip38-desktop/releases) (.exe) – A standalone version that runs without installation.
+- Executable (.exe) – A standalone version that runs without installation.
 
 Once downloaded, double-click the .msi or .exe file and follow the on-screen instructions to complete the installation.
 
@@ -38,14 +38,14 @@ Once downloaded, double-click the .msi or .exe file and follow the on-screen ins
 
 To install on Linux, download one of the following from the Releases page:
 
-- [Debian Package (.deb)](https://github.com/talonlab/bip38-desktop/releases) – Recommended for Debian-based systems like Ubuntu and Debian.
+- Debian Package (.deb) – Recommended for Debian-based systems like Ubuntu and Debian.
 
     Installation: Open a terminal, navigate to the download location, and run:
     ```
     sudo dpkg -i bip38-desktop-x.x.x-amd64.deb
     ```
 
-- [AppImage](https://github.com/talonlab/bip38-desktop/releases) – A portable format compatible with most Linux distributions.
+- AppImage– A portable format compatible with most Linux distributions.
 
     Installation: Make the file executable and run:
     ```
@@ -59,16 +59,16 @@ To install on Linux, download one of the following from the Releases page:
 
 To install on Mac, download one of the following from the Releases page:
 
-- [macOS App Bundle (.app)](https://github.com/talonlab/bip38-desktop/releases):
+- macOS App Bundle (.app):
    - Available as a `.zip` file.
    - Two versions:
-     - **ARM64**: For Apple Silicon `M` series devices.
+     - **arm64**: For Apple Silicon `M` series devices.
      - **x64**: For Intel-based Macs.
 
-- [macOS Disk Image (.dmg)](https://github.com/talonlab/bip38-desktop/releases):
+- macOS Disk Image (.dmg):
    - A convenient format for installation on macOS.
    - Two versions:
-     - **ARM64**: For Apple Silicon `M` series devices.
+     - **arm64**: For Apple Silicon `M` series devices.
      - **x64**: For Intel-based Macs.
 
 ## Development
@@ -87,7 +87,6 @@ Install Requirements: Navigate to the project directory and install the required
 pip install -r requirements.txt
 ```
 
-
 ## Contributing
 
 Feel free to open an [issue](https://github.com/talonlab/bip38-desktop/issues) if you find a problem,
@@ -104,6 +103,7 @@ If you find our work helpful, consider supporting the project:
 
 - **Bitcoin** - 16c7ajUwHEMaafrceuYSrd35SDjmfVdjoS
 - **Ethereum / ERC20** - 0xD3cbCB0B6F82A03C715D665b72dC44CEf54e6D9B
+- **Solana** - 9cVoan5GvnpVvysEkFWEFR4k9cpTdWKmqQ6Gi7nwM5ES
 
 Thank you very much for your support.
 
