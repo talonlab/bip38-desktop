@@ -15,7 +15,7 @@ import platform
 import subprocess
 
 from bip38.info import __description__, __name__
-from src.info import __version__ as app_version, __author__ as maintainer
+from src.info import __version__ as app_version, __author__ as maintainer, __description as description
 
 arch_map = {
     "x86_64": "amd64",
@@ -32,7 +32,7 @@ if platform.system() != "Linux":
 
 app_version = app_version.lstrip("v") # normalized version
 app_name = __name__.upper()
-app_description = __description__
+app_description = description
 
 icon_path = "src/ui/images/svg/logo.svg"  
 
@@ -76,6 +76,7 @@ Exec=/opt/{app_name}/{app_name}.AppImage
 Icon={app_name}
 Type=Application
 Categories=Utility;
+Comment={app_description}
 """
 desktop_entry_path = applications_dir / f"{app_name}.desktop"
 desktop_entry_path.write_text(desktop_entry_content)

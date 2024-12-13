@@ -8,7 +8,7 @@ from cx_Freeze import setup, Executable
 
 import platform
 
-from src.info import __version__ as version, __author__ as author
+from src.info import __version__ as version, __author__ as author, __description__ as description
 
 
 app_name  = "BIP38"
@@ -68,7 +68,8 @@ bdist_msi_opt = {
     "data": msi_data,
     "initial_target_dir": f"[ProgramFiles64Folder]\\{app_name}",
     "install_icon": icon_path,
-    "upgrade_code": "{E4A369F6-FC76-3013-A420-3BB9B370711C}"
+    "upgrade_code": "{E4A369F6-FC76-3013-A420-3BB9B370711C}",
+    "license_file": "data/TERMS_AND_CONDITIONS.rtf"
 }
 
 build_exe_opt = {
@@ -102,6 +103,7 @@ setup(
     name=app_name,
     author=author,
     version=version,
+    description=description,
     executables=executables,
     options={
         "build_exe": build_exe_opt,

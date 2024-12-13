@@ -6,3 +6,4 @@
 
 __version__: str = "v0.2.0"
 __author__: str = "Talon Lab"
+__description__: str = "A cross-platform client desktop application built on the Bitcoin Improvement Proposal - 0038 (BIP38) library"
